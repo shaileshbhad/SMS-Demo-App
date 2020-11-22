@@ -1,0 +1,23 @@
+<table class="table table-striped table-bordered table-sm row-border hover" datatable [dtOptions]="dtOptions">
+  <thead>
+    <tr>
+      <th>City</th>
+      <th>Start Date</th>
+      <th>End Date</th>
+      <th>color</th>
+      <th>Status</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+   <tr *ngFor="let smsDetail of data">
+         <td>{{smsDetail.city}}</td>
+         <td>{{smsDetail.startDate}}</td>
+         <td>{{smsDetail.endDate}}</td>
+         <td>{{smsDetail.color}}</td>
+         <td>{{smsDetail.status}}</td>
+         <td>{{smsDetail.price}}</td>
+     </tr>
+  </tbody>
+</table>
+<router-outlet></router-outlet>
